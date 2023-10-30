@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!----------------
+    - ID füe das Html Element angelegt
+    ------------------>
+    <div id="meinElement"><h2>Hallo Welt</h2></div>
+
+    <!----------------
+    - JavaScript.... Start
+    ------------------>
+
+    <script>
+      /*************
+       * Verbindung zum Html Element
+       ************/
+      const verbinden = document.getElementById("meinElement");
+      /*************
+       * Verbindung steht?
+       ************/
+      if (verbinden) {
+        /*************
+         * Mit += wird zum Inhalt hinzugefügt
+         ************/
+
+        /*************
+         * Überschrift
+         ************/
+        verbinden.innerHTML += "<h2>Die Welt ist schön</h2>";
+
+        /*************
+         * Bild
+         ************/
+        verbinden.innerHTML += '<img id="bild" src="./bilder/welt.jpg">';
+
+        /*************
+         * Paragraph
+         ************/
+        verbinden.innerHTML +=
+          "<p>Die Welt ist schönDie Welt ist schönDie Welt ist schönDie Welt ist schönDie Welt ist schön</p>";
+
+        /*************
+         * Stylen
+         ************/
+        verbinden.style.backgroundColor = "lightskyblue";
+        verbinden.style.color = "darkblue";
+        verbinden.style.margin = "20px";
+        verbinden.style.padding = "10px";
+        verbinden.style.fontSize = "120%";
+        verbinden.style.lineHeight = "150%";
+        verbinden.style.borderRadius = "20px";
+
+        /*************
+         * Bild Stylen
+         ************/
+        bild.style.borderRadius = "20px";
+        bild.style.boxShadow = "5px 5px 10px grey";
+      }
+    </script>
+    <!----------------
+    - JavaScript.... Ende
+    ------------------>
+  </body>
+</html>
